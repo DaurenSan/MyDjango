@@ -2,5 +2,9 @@ env\Scripts\activate
 
 py manage.py runserver
 
+py manage.py makemigrations
+
+py manage.py migrate
+
 env1/bin/pip freeze > requirements.txt
 $ env2/bin/pip install -r requirements.txt
