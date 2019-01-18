@@ -8,3 +8,7 @@ py manage.py migrate
 
 env1/bin/pip freeze > requirements.txt
 $ env2/bin/pip install -r requirements.txt
+
+2012-04-23T18:25:43.511Z
+
+http --form POST :8000/salesmen/employees

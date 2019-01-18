@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'salesmen.apps.SalesmenConfig',
+    'django_seed',
     'rest_framework',
     'corsheaders',
     'django.contrib.admin',
