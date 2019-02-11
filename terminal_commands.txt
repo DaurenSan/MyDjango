@@ -1,4 +1,4 @@
-env\Scripts\activate
+venv\Scripts\activate
 
 py manage.py runserver
 
@@ -12,3 +12,11 @@ $ env2/bin/pip install -r requirements.txt
 2012-04-23T18:25:43.511Z
 
 http --form POST :8000/salesmen/employees
+
+,}0jn/Z_4ph*
+
+Username: Saduakhas
+Pass: yersul92
+
+python bot_handlers2.py
+
