@@ -11,7 +11,7 @@ def index(request):
     )
 
     # The data that you want to store
-    data = "The Data that you need to store in the QR Code"
+    data = 5676
 
     # Add data
     qr.add_data(data)

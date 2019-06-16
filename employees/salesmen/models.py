@@ -2,7 +2,7 @@ from django.db import models
 
 class Task(models.Model):
     """
-    This class describes all the tasks, which we want to accomlish
+    Этот класс описывает задания. которые у нас в работе
     """
     task_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField(auto_now_add=True)
@@ -10,7 +10,7 @@ class Task(models.Model):
 
 class Employee(models.Model):
     """
-    This class describes all employees, which work for us
+    Этот класс описывает работников, которые работают на нас
     """
     responsibilities = models.ManyToManyField(Task, through='Responsibility', blank=True)
     name = models.CharField(max_length=50, blank=True)
@@ -18,7 +18,7 @@ class Employee(models.Model):
 
 class Responsibility(models.Model):
     """
-    Actually this class describes tasks, which are assigned to employees, responsible to manage these tasks
+    Этот класс описывает задания, которые непосредственно поручены к выполнению определенным сотрудникам
     """
     emoployee = models.ForeignKey(Employee, on_delete=models.CASCADE,)
     task = models.ForeignKey(Task, on_delete=models.CASCADE)
