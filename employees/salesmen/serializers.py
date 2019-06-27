@@ -15,4 +15,4 @@ class ResponsibilitySerializer(serializers.ModelSerializer):
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Employee
-        fields = ('id', 'name', 'phone')
+        fields = ('id', 'name', 'phone', 'responsibilities')
